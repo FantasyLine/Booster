@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot sur mesure</title>
+    <style>
+        .familiar {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <?php if (!empty($robot_name)):?>
+        <!-- Affichage du robot créé -->
+        <h1>Votre robot est créé</h1>
+        <p>Le robot s'appelle <?php echo $robot_name; ?>.</p>
+        <p>A l'envers, il s'appelle <?php echo strrev($robot_name); ?>.</p>
+        <p>Le robot a choisi un nombre aléatoire : <?php echo $randomNumber; ?>.</p>
+        <?php echo familiar($is_familiar); ?>
+
+    <?php else: ?>
+        <!-- Affichage du formulaire pour saisir un nom -->
+        <form method="POST" action="index.php">
+            <label for="robot_name">Nom du robot :</label>
+            <input type="text" id="robot_name" name="robot_name" placeholder="Entrez le nom du robot">
+            <br>
+            <label for="is_familiar">Le robot est-il familier?</label>
+            <input type="text" id="is_familiar" name="is_familiar" placeholder="Entrez true ou false si vous aimez le hasard ne mettezrien">
+            <br>
+            <input type="submit" value="Créer le robot">
+        </form>
+        <p>
+        <?php
+        if (!empty($error)) {
+            echo "$error";
+        }
+        ?>
+        </p>
+    <?php endif; ?>
+</body>
+</html>

@@ -1,0 +1,24 @@
+main.container {
+    padding-top: 50px;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+} 
+
+.go-back {
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #02659A;
+}
+
+.error {
+    background-color: #AF291D;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 3px;
+}
