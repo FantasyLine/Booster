@@ -1,0 +1,117 @@
+@use "_reset.scss";
+
+$size: 10px;
+
+@mixin bordered($color: red) {
+  border-top: 1px dashed $color;
+  border-bottom: 2px solid $color;
+}
+
+@mixin padding($size: 0) {
+  padding: $size;
+  margin: $size;
+}
+
+$tablette-breakpoint: 980px;
+
+header {
+  @include padding(2rem);
+  nav {
+    display: flex;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        border-bottom: 1px solid black;
+        transition: .3s all ease;
+
+        @media screen and (max-width: $tablette-breakpoint) {
+          & {
+            color: red;
+          }
+        }
+
+        &:hover {
+          background: red;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          @include bordered;
+
+          @media screen and (max-width: $tablette-breakpoint){
+            & {
+              color: violet;
+            }
+          }
+
+          &:active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: orange;
+    @include bordered(black);
+  }
+
+}
+
+main {
+
+  @include bordered;
+
+  .card{
+    max-width: 100% - 2%;
+    margin: 0 auto;
+
+    &__header {
+      background: grey;
+
+      &__title {
+        text-decoration: underline;
+      }
+    }
+
+    &__body {
+      border: 1px solid black;
+
+      &__content {
+        font-size: 18px;
+
+        &-xl {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .item#{$i} {
+      width: $i * 100px;
+      @include bordered(violet);
+    }
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-column {
+    @extend .flex;
+    flex-direction: column;
+  }
+
+  &-justCenter {
+    justify-content: center;
+  }
+
+  &-alignCenter {
+    @extend .flex;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,105 @@
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ background: #EEEEEE;
+}
+
+main {
+ place-content: center;
+ padding: 2rem;
+}
+
+h2 {
+ font-family: monospace;
+ font-weight: 600;
+ font-size: 1.8rem;
+ color: #333333;
+ margin-bottom: 1rem;
+}
+
+.parent {
+ list-style: none;
+ display: flex;
+ border: 1px dashed salmon;
+ margin-bottom: 1rem;
+}
+
+.cards {
+ padding: 2rem;
+ background: #FFFFFF;
+ border: 1px solid silver;
+}
+
+.wrapper {
+ max-width: 285px;
+}
+
+.rowReverse .parent {
+ flex-direction: row-reverse;
+}
+
+.column .parent {
+ flex-direction: column;
+}
+
+.colReverse .parent {
+ flex-direction: column-reverse;
+}
+
+.noWrap .parent {
+ flex-wrap: nowrap;
+}
+
+.wrap .parent {
+ flex-wrap: wrap;
+}
+
+.alignCenter .parent {
+ /*flex-direction: column;*/
+ align-items: center;
+}
+
+.alignCenter .cards:nth-child(even) {
+ height: 100px;
+}
+
+.alignStart .parent {
+ align-items: flex-start;
+}
+
+.alignStart .cards:nth-child(even) {
+ height: 100px;
+}
+
+.alignEnd .parent {
+ align-items: flex-end;
+ height: 150px;
+}
+
+.justifyCenter .parent {
+ justify-content: center;
+}
+
+.justifyStart .parent {
+ justify-content: flex-start;
+}
+
+.justifyEnd .parent {
+ justify-content: flex-end;
+}
+
+.justifyBetween .parent {
+ justify-content: space-between;
+}
+
+.justifyAround .parent {
+ justify-content: space-around;
+}
+
+.justifyEvenly .parent {
+ justify-content: space-evenly;
+}

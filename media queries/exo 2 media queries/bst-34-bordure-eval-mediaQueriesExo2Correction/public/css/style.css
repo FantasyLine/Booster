@@ -1,0 +1,244 @@
+* {
+ box-sizing: border-box;
+ line-height: 1.3;
+ font-family: "Arvo", sans-serif;
+ scroll-behavior: smooth;
+}
+
+html {
+ font-size: 10px;
+}
+
+body {
+ padding: 0;
+ margin: 0;
+}
+
+/* Header */
+header {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ background: #222222;
+}
+
+.menu-burger {
+ display: none;
+}
+
+nav ul {
+ display: flex;
+ justify-content: space-between;
+ list-style: none;
+ gap: 2rem;
+}
+li a {
+ text-decoration: none;
+ color: #67697F;
+ text-transform: uppercase;
+ font-size: 1rem;
+}
+
+/* Header End */
+
+/*Home section*/
+
+#home {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2rem;
+ background: url("../img/hero-image.jpg") top;
+ background-size: cover;
+ padding: 1rem 2rem;
+}
+
+.title {
+ color: #eeeeee;
+ font-weight: lighter;
+ font-size: 4rem;
+ text-align: center;
+ max-width: 550px;
+}
+
+.hero-text {
+ color: #eeeeee;
+ max-width: 520px;
+ text-align: center;
+ font-weight: lighter;
+ font-size: 1.1rem;
+}
+
+.hero-text span {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+.cta {
+ color: #eeeeee;
+ text-decoration: none;
+ padding: .8rem 1.1rem;
+ font-size: 1.7rem;
+ background: #D9534F;
+ border-radius: 5px;
+ font-weight: normal;
+}
+
+/*Home section end*/
+
+/* Who section */
+
+#who {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 3rem 1rem;
+}
+
+#who .content {
+ font-size: 1.5rem;
+ max-width: 800px;
+ text-align: center;
+}
+
+.subTitle {
+ color: #E74C3C;
+ font-size: 3rem;
+ text-transform: uppercase;
+}
+
+.underline {
+ border-bottom: 1px solid #E74C3C;
+}
+
+
+
+#who .content span {
+ color: #E74C3C;
+}
+
+/* Who section end */
+
+/* Get involved section */
+
+#get-involved {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background: #F5F5F5;
+ padding: 3rem 1rem;
+}
+
+.cards {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ align-items: center;
+ max-width: 800px;
+}
+
+.card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1rem;
+}
+
+.card .subTitle {
+ margin: 0;
+}
+
+.cta-light {
+ background: white;
+ color: #E74C3C;
+ border: 1px solid #eeeeee;
+ font-size: 1.4rem;
+ font-weight: bold;
+ text-transform: capitalize;
+}
+
+.card i {
+ font-size: 5rem;
+ background: #222222;
+ border-radius: 50%;
+ width: 90px;
+ height: 90px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+/* Get involved section end */
+
+
+/* footer */
+
+footer {
+ background: #F74C3C;
+ display: flex;
+ height: 200px;
+ align-items: flex-end;
+ justify-content: center;
+ padding: 0 0 4rem;
+}
+
+.img-container {
+ max-width: 800px;
+ flex-grow: 1;
+}
+
+/* footer End */
+
+a#back-to-top {
+ background: #222222;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ font-size: 2rem;
+ width: 25px;
+ height: 25px;
+ text-decoration: none;
+ color: white;
+
+/* positionnement */
+
+ position: fixed;
+ right: 3rem;
+ bottom: 3rem;
+
+}
+
+@media screen and (max-width: 991px) {
+ .cards {
+  flex-direction: column;
+  gap: 5rem;
+ }
+ .card p {
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  text-align: center;
+ }
+
+ .img-container {
+  padding-left: 3rem;
+ }
+}
+
+@media screen and (max-width: 767px) {
+  .img-container {
+   padding-left: 1rem;
+  }
+  nav {
+   display: none;
+  }
+
+  .menu-burger {
+   display: inline;
+  }
+
+  header {
+   padding: .5rem 1rem;
+   justify-content: space-between;
+  }
+}

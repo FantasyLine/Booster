@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <title>Les FlexBox</title>
+</head>
+<body>
+  <main>
+    <section>
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nom" placeholder="Votre nom" required value="Coucou" readonly hidden />
+        <input type="password" minlength="3" maxlength="10"  name="pass" placeholder="Votre mot de passe" required  autofocus/>
+        <input type="date" name="date" id=""/>
+        <input type="number" min="0" max="10" step="2" />
+
+
+        <input type="radio" name="choix" value="Choix 1" />
+        <input type="radio" name="choix" value="Choix 2">
+        <input type="radio" name="choix" value="Choix 3">
+
+        <fieldset>
+          <legend>Quel est votre animal préférer ?</legend>
+          <label for="chien">Chien
+            <input id="chien" type="checkbox" name="check[chien]" value="1" />
+          </label>
+
+          <label for="chat">chat</label>
+          <input id="chat" type="checkbox" name="check[chat]" value="1" />
+          <label for="rat">Rat</label>
+          <input type="checkbox" id="rat" name="check[rat]" value="1" />
+          <label for="hamster">Hamster</label>
+          <input type="checkbox" id="hamster" name="check[hamster]" value="1" />
+        </fieldset>
+
+
+        <input type="range" name="range" min="0" max="100" />
+        <input type="email" name="mail" id="email">
+
+        <input type="color" name="color" id="color" />
+
+        <select name="select[]" multiple>
+          <optgroup label="Groupe 1">
+            <option value="1">Lorem ipsum.</option>
+            <option value="2">Lorem.</option>
+          </optgroup>
+          <optgroup label="Groupe 2">
+            <option value="3">Lorem ipsum dolor sit amet.</option>
+          </optgroup>
+        </select>
+
+        <textarea name="text" placeholder="Votre message içi ...">Votre message içi ...</textarea>
+
+        <input type="file" name="fichier" />
+        <input type="submit" value="Valider" />
+        <input type="button" value="Valider" />
+        <input type="reset" value="Reset" />
+      </form>
+
+    </section>
+
+
+    <section class="default">
+      <h2>Défaut</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="rowReverse">
+      <h2>flex-direction : row-reverse</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="column">
+      <h2>flex-direction : column</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="colReverse">
+      <h2>flex-direction : column-reverse</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="noWrap">
+      <h2>nowrap</h2>
+      <ul class="parent wrapper">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="wrap">
+      <h2>wrap</h2>
+      <ul class="parent wrapper">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignCenter">
+      <h2>align-items : center</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignStart">
+      <h2>align-items : flex-start</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="alignEnd">
+      <h2>align-items : flex-end</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyCenter">
+      <h2>justify-content : center</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyStart">
+      <h2>justify-content : flex-start</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyEnd">
+      <h2>justify-content : flex-end</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyBetween">
+      <h2>justify-content : space-between</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyAround">
+      <h2>justify-content : space-around</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="justifyEvenly">
+      <h2>justify-content : space-evenly</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="order">
+      <h2>Order</h2>
+      <ul class="parent">
+        <li class="cards cards1">1</li>
+        <li class="cards cards2">2</li>
+        <li class="cards cards3">3</li>
+        <li class="cards cards4">4</li>
+        <li class="cards cards5">5</li>
+        <li class="cards cards6">6</li>
+      </ul>
+    </section>
+    <section class="justifyEvenly">
+      <h2>justify-content : space-evenly</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">5</li>
+        <li class="cards">6</li>
+      </ul>
+    </section>
+    <section class="grow">
+      <h2>Grow</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+      </ul>
+    </section>
+    <section class="shrink">
+      <h2>Shrink</h2>
+      <ul class="parent">
+        <li class="cards">1</li>
+        <li class="cards">2</li>
+        <li class="cards">3</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+        <li class="cards">4</li>
+      </ul>
+    </section>
+
+    <section class="table">
+      <h2>Les tableaux</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Valeur 1</th>
+            <th>Valeur 2</th>
+            <th>Valeur 3</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+
+          </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>Pied 1</td>
+          <td>Pied 2</td>
+          <td>Pied 3</td>
+        </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <img class="float" src="./public/img/ebauche_logo_sow.png" alt="logo" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quod, unde. Aliquid enim error magni mollitia, necessitatibus nihil repudiandae saepe. Commodi deleniti ducimus eos explicabo fuga in ipsa repellat saepe!</p>
+
+    <section class="imgContainer">
+      <img src="./public/img/ebauche_logo_sow.png" alt="logo" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quod, unde. Aliquid enim error magni mollitia, necessitatibus nihil repudiandae saepe. Commodi deleniti ducimus eos explicabo fuga in ipsa repellat saepe!</p>
+    </section>
+
+  </main>
+</body>
+</html>

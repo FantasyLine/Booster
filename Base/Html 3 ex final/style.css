@@ -1,0 +1,98 @@
+@font-face {
+
+    font-family: 'Courgette-Regular';
+    src: url(Courgette-Regular.ttf);
+}
+*{
+    margin: auto;
+    text-align: center;
+    width: 980px;
+    font-family: 'Source Code Pro';
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 600;
+    color:#444
+}
+h1{
+    text-transform:  uppercase;
+}
+p{ 
+    margin-bottom: 10px;
+}
+.floatg{
+    float: left;
+    margin-right: 10px; 
+}
+.floatd{
+    float: right;
+    margin-left: 10px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+}
+h3, blockquote{
+    font-size: 25px;
+}
+h1, h2, h3, blockquote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+cite{
+    font-size: 14px;
+}
+ol li{
+    font-size: 20px;
+    text-align: left;
+    
+}
+ol li a{
+    text-decoration: none ;
+}
+blockquote{
+    background-color: #d7e1ef;
+}
+p, ul li{
+    text-align: left;
+}
+h1, h2, h3, ol li a, ol li, blockquote{
+    font-family: 'Courgette-Regular', 'Source Code Pro';
+}
+h1, h3, blockquote, .bleuf, ol li a, cite, ol li{
+    color:#003884;
+    font-weight: 800;
+}
+h2, .bleum{
+    color:#4f89b9 ;
+}
+.bleum{
+    font-style: italic;
+}
+
+img{
+    width : auto ;
+    max-height : 200px;
+}
+.fin{
+    border-top: 3px #003884 solid;    
+    padding-top: 25px;
+}
+svg{
+    width : auto ;
+    max-height : 20px;
+}
+.wa{
+    max-width : 40px;
+    height: auto;
+}
+.cu, .lastp{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+

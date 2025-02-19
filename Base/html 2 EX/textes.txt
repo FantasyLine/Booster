@@ -1,0 +1,21 @@
+Les bordures en CSS
+
+C'est la propriété "border" qui permet d'appliquer une bordure à un élément. C'est en fait une propriété raccourcie qui englobe 3 propriétés :
+
+    border-color pour la couleur
+    border-width pour son épaisseur (valeur en pixels)
+    border-style : pour le style
+
+Quelques exemples de styles de bordure possibles en CSS :
+
+Une bordure avec la valeur solid.
+
+Une bordure avec la valeur dotted.
+
+Une bordure avec la valeur dashed.
+
+Une bordure avec la valeur double.
+
+Une bordure sur le côté gauche uniquement.
+
+Une bordure avec les angles arrondis.

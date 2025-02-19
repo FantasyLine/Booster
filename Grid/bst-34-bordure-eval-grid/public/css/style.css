@@ -1,0 +1,65 @@
+.container {
+ display: grid;
+ grid-template-areas: "header header header"
+ "nav . content"
+ "nav . content"
+ "footer footer footer";
+/*!* permet de placer les items par rapport à la cellule dans laquelle elle se trouve *!*/
+/* justify-items: center;*/
+/* align-items: end;*/
+/* !* La commande suivante reuni justify-items et align-items *!*/
+/* place-items: end center;*/
+
+/*!* permet de placé la grille par rapport a la taille container *!*/
+/* justify-content: center;*/
+/* align-content: end;*/
+/*!* La commande suivante reuni justify-content et align-content *!*/
+/* place-content: end center;*/
+
+/* !* Permet de changer l'orientation de placement des items *!*/
+/* grid-auto-flow: column;*/
+
+ gap: 10px;
+}
+
+.item {
+ text-align: center;
+ padding: 3rem;
+ background: red;
+}
+
+.item1 {
+ grid-area: header;
+}
+
+.item2 {
+ grid-area: nav;
+}
+
+.item3 {
+ grid-area: content;
+}
+
+.item4 {
+ grid-area: footer;
+}
+
+/*.item1 {*/
+/* !*grid-column-start: 1;*!*/
+/* !*grid-column-end: 3;*!*/
+/* grid-column: 1 / 4;*/
+/* grid-row: 1 / 3;*/
+/*}*/
+
+/*.item2 {*/
+/* !* permet de gerer l'alignement d'un item en particulier sans bouger les autres *!*/
+
+/* justify-self: end;*/
+/* align-self: end;*/
+/*}*/
+
+/*.item5 {*/
+/* grid-column: 1 / span 5;*/
+/* justify-self: stretch;*/
+/* align-self: stretch;*/
+/*}*/
